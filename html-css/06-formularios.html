@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, inicial-scale=1">
+		<style>
+			* {
+			box-sizing: border-box;
+			}
+			body {
+			font-family: Arial, Helvetica, sans-serif;
+			}
+			/* Style the header */
+			header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+			}
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			float: left;
+			width: 30%;
+			background: #ccc;
+			padding: 20px;
+			}
+			/* Style the list inside the menu */
+			nav ul {
+			list-style-type: none;
+			padding: 0;
+			}
+			article {
+			float: left;
+			padding: 20px;
+			width: 70%;
+			background-color: #f1f1f1;
+			}
+			/* Clear floats after the columns */
+			section::after {
+			background: #ccc;
+			content: "";
+			display: table;
+			clear: both;
+			}
+			/* Style the footer */
+			footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color: white;
+			}
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			nav, article {
+			width: 100%;
+			height: auto;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Curso Front-End - HTML</h2>
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="modulo-07-exercicio_marco.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo: </p>
+				<form method="POST">
+					<div>
+						<label for="nome">Nome: </label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+					<div>
+						<label for="email">E-mail: </label><br>
+						<input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+					</div>
+					<div>
+						<label for="mensagem">Mensagem: </label><br>
+						<textarea name="mensagem" id="mensagem" rows="5" placeholder="Deixe-nos sua mensagem ツ"></textarea>
+					</div>
+					<div>
+						<p><label for="mensagem">Qual linguagem você prefere?</label><br>
+							<input type="radio" name="liguagem_prefere" value="HTML"> HTML
+							<input type="radio" name="liguagem_prefere" value="CSS"> CSS
+							<input type="radio" name="liguagem_prefere" value="Javascript"> Javascript
+						</p>
+					</div>
+					<div>
+						<p><label for="mensagem">Quais linguagens você sabe?</label><br>
+							<input type="checkbox" id="linguagens_sabe1" name="linguagens_sabe1" value="HTML"> HTML
+							<input type="checkbox" id="linguagens_sabe2" name="linguagens_sabe2" value="CSS"> CSS
+							<input type="checkbox" id="linguagens_sabe3" name="linguagens_sabe3" value="Javascript"> Javascript
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita? </label>
+						<select name="cor" id="cor">
+							<option value="azul">Azul</option>
+							<option value="verde" selected>Verde</option>
+							<option value="vermelho">Vermelho</option>
+						</select>
+					</div>
+					<br/>
+					<div>
+						<input type="submit" value="Envie sua mensagem">
+					</div>
+
+				</form>
+			</article>
+		</section>
+		<footer>
+			<p align="right">Desenvolvido por Marco A. Butrico ツ - 04/06/2022</p>
+		</footer>
+	</body>
+</html>

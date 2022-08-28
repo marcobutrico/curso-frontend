@@ -17,3 +17,4 @@
 - Informações de alteração
 - Após testado todo o código
 
+git clone (path)

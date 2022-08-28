@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width, inicial-scale=1">
+	<style>
+
+			* {
+
+			 box-sizing: border-box;
+
+			}
+
+
+
+			body {
+
+			 font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+
+
+			/* Style the header */
+
+			header {
+
+			 background-color: #666;
+
+			 padding: 30px;
+
+			 text-align: center;
+
+			 font-size: 35px;
+
+			 color: white;
+
+			}
+
+
+
+			/* Create two columns/boxes that floats next to each other */
+
+			nav {
+
+			 float: left;
+
+			 width: 30%;
+
+			  
+
+			 background: #ccc;
+
+			 padding: 20px;
+
+			}
+
+
+
+			/* Style the list inside the menu */
+
+			nav ul {
+
+			 list-style-type: none;
+
+			 padding: 0;
+
+			}
+
+
+
+			article {
+
+			 float: left;
+
+			 padding: 20px;
+
+			 width: 70%;
+
+			 background-color: #f1f1f1;
+
+			}
+
+
+
+			/* Clear floats after the columns */
+
+			section::after {
+
+			 background: #ccc;
+
+			 content: "";
+
+			 display: table;
+
+			 clear: both;
+
+			}
+
+
+
+			/* Style the footer */
+
+			footer {
+
+			 background-color: #777;
+
+			 padding: 10px;
+
+			 text-align: center;
+
+			 color: white;
+
+			}
+
+
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+			@media (max-width: 600px) {
+
+			 nav, article {
+
+			  width: 100%;
+
+			  height: auto;
+
+			 }
+
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Curso Front-End - HTML</h2>
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="modulo-07-exercicio_marco.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Título artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sodales consectetur augue eu congue. Maecenas at eros magna. Quisque eleifend tortor in efficitur porta. Sed id varius nisi. In hac habitasse platea dictumst. Nullam volutpat consectetur metus quis imperdiet. Fusce sagittis felis dui. Cras sit amet tincidunt nisl. Etiam sit amet urna venenatis, vulputate urna vel, pellentesque elit. Cras interdum scelerisque venenatis. Nunc tristique justo elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+				<p>Suspendisse dapibus urna ligula, eget iaculis enim placerat nec. Nulla sed vestibulum felis, et dictum urna. Sed est augue, pellentesque sit amet tincidunt at, pulvinar at metus. Vivamus malesuada nec lorem id lacinia. Mauris condimentum, nisi vel finibus sagittis, ipsum sem auctor quam, eu varius lacus sapien sed massa. Phasellus pulvinar odio vel nisl accumsan fermentum. Quisque in augue blandit, vestibulum nunc eget, scelerisque lectus. Aliquam at luctus mauris. Morbi vitae condimentum erat. Aliquam facilisis, ligula id tincidunt efficitur, ipsum dolor pharetra tortor, in eleifend diam libero id lorem.</p>
+
+			</article>
+		</section>
+				
+		<footer>
+			<p align="right">Desenvolvido por Marco A. Butrico ツ - 04/06/2022</p>
+		</footer>
+	</body>
+</html>
