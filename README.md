@@ -1,4 +1,5 @@
 # Curso Front-End EBAC
+### EBAC
 
 ## Git
 
@@ -45,4 +46,8 @@ https://git-scm.com/
 ### Push
 - Informações de alteração no repositório
 
+<<<<<<< HEAD
 - git push 
+=======
+- git push 
+>>>>>>> 973e9c2c8e77bd3633f9ee75ac4fbe6454b49757
