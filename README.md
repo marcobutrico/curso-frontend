@@ -13,6 +13,12 @@
 - Criar métricas de desenvolvimento
 - Controle de revisões / estáveis
 
+### Instalação do Github
+https://git-scm.com/
+
+- Windows: https://git-scm.com/w
+- Linux: sudo apt-get install git
+- Mac: brew install git
 
 ### Gitflow
 - git clone (path)
